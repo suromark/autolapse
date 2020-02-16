@@ -9,13 +9,13 @@ An automated octoprint timelapse generator
 - If curl fails, it calls the script "/home/pi/recam.sh" which restarts the webcamd service.
 
 ## Motivation
-Octoprint's builtin timelapse stops at the end of the print file. Its post-roll option just appends the last picture, which usually is the print head still printing.
-By using the time delay of the print head cooling down, my script adds a generous amount of real post-roll pictures.
+- Octoprint's builtin timelapse stops at the end of the print file. Its post-roll option just appends the last picture, which usually is the print head still printing.
+- By using the time delay of the print head cooling down, my script adds a generous amount of real post-roll pictures.
 
 ## Prerequisites
-A working Octoprint installation
-An API key for getting access
-A webcam connected to the Pi, whose output is accessible as JPEG still picture
+- A working Octoprint installation
+- An API key for getting access, which you'll need to enter in the ma_autolapse.sh file instead of "YOUR-API-KEY" (two locations in the file)
+- A webcam connected to the Pi, whose output is accessible as JPEG still picture
 
 ## Setup
 - Add this start command to the /etc/rc.local file, above the final "exit 0" command:
