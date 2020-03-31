@@ -11,8 +11,17 @@ cd /home/pi/autolapses
 
 TRIGTEMP=120
 LAPSETIME=4
+
+# NOTE: Octoprint 1.4+ differs from Octoprint 1.3. Make sure you un-comment the right version for your Octoprint
+
+# Octoprint 1.3 syntax
 re1="\"name\": \"(.*)\.gcode\""
 re2="\"actual\": ([0-9]+)"
+re3="\"tool0\""
+
+# Octoprint 1.4 syntax
+re1="\"name\":\"(.*)\.gcode\",\"origin"
+re2="\"actual\":([0-9]+)"
 re3="\"tool0\""
 
 while :
