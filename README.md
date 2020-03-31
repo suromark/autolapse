@@ -23,6 +23,7 @@ An automated octoprint timelapse generator
 - Make sure that the script recam.sh runs without requiring the sudo password.
 
 ## Hints, notes
+- Octoprint 1.4 has changed the JSON output, rendering the previous Regexp used to extract the filename and progress invalid. Pick the right patterns for your Octoprint from the comments at the beginning of the ma_autolapse.sh file.
 - Running the Raspberry off a USB SSD drive is highly recommended over using a microSD card, both for speed and durability.
 - For best results, set the raspberry camera to fixed exposure and fixed white balance. This is accessible through the file /boot/octopi.txt
 - My config line for the camera options reads like this:
